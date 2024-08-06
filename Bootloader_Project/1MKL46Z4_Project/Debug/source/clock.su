@@ -1,0 +1,8 @@
+../source/clock.c:19:9:Fast_IRC_FBI	8	static
+../source/clock.c:35:9:FLL_Slow_FEI	8	static
+../source/clock.c:52:9:FLL_OSC_FEE	16	static
+../source/clock.c:81:9:PLL_PEE	16	static
+../source/clock.c:111:9:OSC_FBE	16	static
+../source/clock.c:134:9:OSC_PBE	16	static
+../source/clock.c:158:10:mode	16	static
+../source/clock.c:180:10:GetCpuClockFrequency	16	static

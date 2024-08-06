@@ -1,0 +1,7 @@
+../source/UART0.c:96:42:PrintfString	8	static
+../source/UART0.c:12:6:init_UART0	0	static
+../source/UART0.c:25:6:UART_WriteString	8	static
+../source/UART0.c:47:6:Config_Baudrate	72	static
+../source/UART0.c:89:6:UART0_Baudrate	8	static
+../source/UART0.c:107:10:str_to_int	8	static
+../source/UART0.c:117:6:sendnumber	40	static

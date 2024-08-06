@@ -1,0 +1,257 @@
+10:47:18 **** Clean-only build of configuration Debug for project 1MKL46Z4_Project ****
+make -r -j16 clean 
+rm -rf ./utilities/fsl_debug_console.d ./utilities/fsl_debug_console.o ./utilities/fsl_io.d ./utilities/fsl_io.o ./utilities/fsl_log.d ./utilities/fsl_log.o ./utilities/fsl_str.d ./utilities/fsl_str.o
+rm -rf ./startup/startup_mkl46z4.d ./startup/startup_mkl46z4.o
+rm -rf ./source/Flash.d ./source/Flash.o ./source/Mock2.d ./source/Mock2.o ./source/Ring_buffe.d ./source/Ring_buffe.o ./source/UART0.d ./source/UART0.o ./source/clock.d ./source/clock.o ./source/init.d ./source/init.o ./source/programme.d ./source/programme.o ./source/srec.d ./source/srec.o
+rm -rf ./drivers/fsl_clock.d ./drivers/fsl_clock.o ./drivers/fsl_common.d ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.d ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.d ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.d ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.d ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.d ./drivers/fsl_gpio.o ./drivers/fsl_i2c.d ./drivers/fsl_i2c.o ./drivers/fsl_lpsci.d ./drivers/fsl_lpsci.o ./drivers/fsl_smc.d ./drivers/fsl_smc.o ./drivers/fsl_uart.d ./drivers/fsl_uart.o
+rm -rf ./board/board.d ./board/board.o ./board/clock_config.d ./board/clock_config.o ./board/peripherals.d ./board/peripherals.o ./board/pin_mux.d ./board/pin_mux.o
+rm -rf ./CMSIS/system_MKL46Z4.d ./CMSIS/system_MKL46Z4.o
+rm -rf 1MKL46Z4_Project.axf
+ 
+10:47:19 **** Build of configuration Debug for project 1MKL46Z4_Project ****
+make -r -j16 all 
+Building file: ../utilities/fsl_debug_console.c
+Building file: ../utilities/fsl_io.c
+Building file: ../utilities/fsl_log.c
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DCPU_MKL46Z256VLL4_cm0plus -DCPU_MKL46Z256VLL4 -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\board" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\source" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\drivers" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\CMSIS" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\utilities" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\startup" -Os -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmacro-prefix-map="../utilities/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"utilities/fsl_debug_console.d" -MT"utilities/fsl_debug_console.o" -MT"utilities/fsl_debug_console.d" -o "utilities/fsl_debug_console.o" "../utilities/fsl_debug_console.c"
+Building file: ../utilities/fsl_str.c
+arm-none-eabi-gcc -DCPU_MKL46Z256VLL4_cm0plus -DCPU_MKL46Z256VLL4 -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\board" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\source" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\drivers" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_ProjecInvoking: MCU C Compiler
+t\CMSIS" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\utilities" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\startup" -Os -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmacro-prefix-map="../utilities/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"utilities/fsl_io.d" -MT"utilities/fsl_io.o" -MT"utilities/fsl_io.d" -o "utilities/fsl_io.o" "../utilities/fsl_io.c"
+arm-none-eabi-gcc -DCPU_MKL46Z256VLL4_cm0plus -DCPU_MKL46Z256VLL4 -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\board" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\source" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\drivers" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\CMSIS" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\utilities" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\startup" -Os -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmacro-prefix-map="../utilities/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"utilities/fsl_log.d" -MT"utilities/fsl_log.o" -MT"utilities/fsl_log.d" -o "utilities/fsl_log.o" "../utilities/fsl_log.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DCPU_MKL46Z256VLL4_cm0plus -DCPU_MKL46Z256VLL4 -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\board" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\source" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\drivers" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\CMSIS" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\utilities" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\startup" -Os -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmacro-prefix-map="../utilities/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"utilities/fsl_str.d" -MT"utilities/fsl_str.o" -MT"utilities/fsl_str.d" -o "utilities/fsl_str.o" "../utilities/fsl_str.c"
+Building file: ../startup/startup_mkl46z4.c
+Building file: ../source/Flash.c
+Invoking: MCU C Compiler
+Building file: ../source/Mock2.c
+arm-none-eabi-gcc -DCPU_MKL46Z256VLL4_cm0plus -DCPU_MKL46Z256VLL4 -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\board" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\source" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\drivers" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\CMSIS" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\utilities" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\startup" -Os -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmacro-prefix-map="../startup/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"startup/startup_mkl46z4.d" -MT"startup/startup_mkl46z4.o" -MT"startup/startup_mkl46z4.d" -o "startup/startup_mkl46z4.o" "../startup/startup_mkl46z4.c"
+Building file: ../source/Ring_buffe.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DCPU_MKL46Z256VLL4_cm0plus -DCPU_MKL46Z256VLL4 -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\board" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\source" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\drivers" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\CMSIS" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\utilities" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\startup" -Os -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmacro-prefix-map="../source/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/Flash.d" -MT"source/Flash.o" -MT"source/Flash.d" -o "source/Flash.o" "../source/Flash.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DCPU_MKL46Z256VLL4_cm0plus -DCPU_MKL46Z256VLL4 -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\board" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\source" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\drivers" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\CMSIS" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\utilities" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\startup" -Os -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmacro-prefix-map="../source/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/Mock2.d" -MT"source/Mock2.o" -MT"source/Mock2.d" -o "source/Mock2.o" "../source/Mock2.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DCPU_MKL46Z256VLL4_cm0plus -DCPU_MKL46Z256VLL4 -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\board" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\source" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\drivers" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\CMSIS" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\utilities" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\startup" -Os -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmacro-prefix-map="../source/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/Ring_buffe.d" -MT"source/Ring_buffe.o" -MT"source/Ring_buffe.d" -o "source/Ring_buffe.o" "../source/Ring_buffe.c"
+Building file: ../source/UART0.c
+Building file: ../source/clock.c
+Building file: ../source/init.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DCPU_MKL46Z256VLL4_cm0plus -DCPU_MKL46Z256VLL4 -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\board" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\source" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\drivers" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\CMSIS" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\utilities" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\startup" -Os -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmacro-prefix-map="../source/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/UART0.d" -MT"source/UART0.o" -MT"source/UART0.d" -o "source/UART0.o" "../source/UART0.c"
+Building file: ../source/programme.c
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DCPU_MKL46Z256VLL4_cm0plus -DCPU_MKL46Z256VLL4 -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\board" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\source" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\drivers" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\CMSIS" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\utilities" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\startup" -Os -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmacro-prefix-map="../source/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/clock.d" -MT"source/clock.o" -MT"source/clock.d" -o "source/clock.o" "../source/clock.c"
+arm-none-eabi-gcc -DCPU_MKL46Z256VLL4_cm0plus -DCPU_MKL46Z256VLL4 -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\board" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\source" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\drivers" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\CMSIS" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\utilities" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\startup" -Os -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmacro-prefix-map="../source/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/init.d" -MT"source/init.o" -MT"source/init.d" -o "source/init.o" "../source/init.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DCPU_MKL46Z256VLL4_cm0plus -DCPU_MKL46Z256VLL4 -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\board" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\source" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\drivers" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\CMSIS" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\utilities" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\startup" -Os -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmacro-prefix-map="../source/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/programme.d" -MT"source/programme.o" -MT"source/programme.d" -o "source/programme.o" "../source/programme.c"
+Building file: ../source/srec.c
+Building file: ../drivers/fsl_clock.c
+Building file: ../drivers/fsl_common.c
+Invoking: MCU C Compiler
+Building file: ../drivers/fsl_ftfx_cache.c
+arm-none-eabi-gcc -DCPU_MKL46Z256VLL4_cm0plus -DCPU_MKL46Z256VLL4 -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\board" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\source" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\drivers" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\CMSIS" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\utilities" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\startup" -Os -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmacro-prefix-map="../source/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/srec.d" -MT"source/srec.o" -MT"source/srec.d" -o "source/srec.o" "../source/srec.c"
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DCPU_MKL46Z256VLL4_cm0plus -DCPU_MKL46Z256VLL4 -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\board" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\source" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\drivers" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\CMSIS" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\utilities" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\startup" -Os -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmacro-prefix-map="../drivers/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_clock.d" -MT"drivers/fsl_clock.o" -MT"drivers/fsl_clock.d" -o "drivers/fsl_clock.o" "../drivers/fsl_clock.c"
+arm-none-eabi-gcc -DCPU_MKL46Z256VLL4_cm0plus -DCPU_MKL46Z256VLL4 -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\board" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\source" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\drivers" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\CMSIS" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\utilities" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\startup" -Os -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmacro-prefix-map="../drivers/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_common.d" -MT"drivers/fsl_common.o" -MT"drivers/fsl_common.d" -o "drivers/fsl_common.o" "../drivers/fsl_common.c"
+Invoking: MCU C Compiler
+../source/programme.c: In function 'Run_Bootloader':
+../source/programme.c:59:46: warning: pointer targets in passing argument 1 of 'PrintfString' differ in signedness [-Wpointer-sign]
+   59 |                                 PrintfString(getReadAddress());
+      |                                              ^~~~~~~~~~~~~~~~
+      |                                              |
+      |                                              uint8_t * {aka unsigned char *}
+In file included from ../source/programme.c:7:
+../source/UART0.h:34:60: note: expected 'char *' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+arm-none-eabi-gcc -DCPU_MKL46Z256VLL4_cm0plus -DCPU_MKL46Z256VLL4 -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\board" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\source" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\drivers" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\CMSIS" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\utilities" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\startup" -Os -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmacro-prefix-map="../drivers/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_ftfx_cache.d" -MT"drivers/fsl_ftfx_cache.o" -MT"drivers/fsl_ftfx_cache.d" -o "drivers/fsl_ftfx_cache.o" "../drivers/fsl_ftfx_cache.c"
+   34 | __attribute__((section(".ramfunc")))void PrintfString(char data[]);
+      |                                                       ~~~~~^~~~~~
+../source/programme.c:66:49: warning: passing argument 2 of 'Flash_Write' from incompatible pointer type [-Wincompatible-pointer-types]
+   66 |                             Flash_Write(0x8000, &firstData, 4);
+      |                                                 ^~~~~~~~~~
+      |                                                 |
+      |                                                 uint32_t * {aka unsigned int *}
+In file included from ../source/programme.c:9:
+../source/Flash.h:17:48: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint32_t *' {aka 'unsigned int *'}
+   17 | void Flash_Write(uint32_t address_u32, uint8_t data[], uint16_t numByte_u16);
+      |                                        ~~~~~~~~^~~~~~
+../source/programme.c:41:18: warning: variable 'readAddress_u8' set but not used [-Wunused-but-set-variable]
+   41 |         uint8_t *readAddress_u8;
+      |                  ^~~~~~~~~~~~~~
+Finished building: ../utilities/fsl_debug_console.c
+Finished building: ../source/init.c
+Finished building: ../startup/startup_mkl46z4.c
+Finished building: ../utilities/fsl_io.c
+ 
+ 
+ 
+Finished building: ../source/Ring_buffe.c
+ 
+Finished building: ../utilities/fsl_log.c
+Finished building: ../source/Flash.c
+Finished building: ../source/Mock2.c
+ 
+ 
+ 
+Building file: ../drivers/fsl_ftfx_controller.c
+ 
+Building file: ../drivers/fsl_ftfx_flash.c
+Finished building: ../source/UART0.c
+Finished building: ../source/programme.c
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
+Finished building: ../source/clock.c
+arm-none-eabi-gcc -DCPU_MKL46Z256VLL4_cm0plus -DCPU_MKL46Z256VLL4 -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\board" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\source" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\drivers" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\CMSIS" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\utilities" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\startup" -Os -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmacro-prefix-map="../drivers/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_ftfx_controller.d" -MT"drivers/fsl_ftfx_controller.o" -MT"drivers/fsl_ftfx_controller.d" -o "drivers/fsl_ftfx_controller.o" "../drivers/fsl_ftfx_controller.c"
+ 
+arm-none-eabi-gcc -DCPU_MKL46Z256VLL4_cm0plus -DCPU_MKL46Z256VLL4 -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\board" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\source" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\drivers" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\CMSIS" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\utilities" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\startup" -Os -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmacro-prefix-map="../drivers/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_ftfx_flash.d" -MT"drivers/fsl_ftfx_flash.o" -MT"drivers/fsl_ftfx_flash.d" -o "drivers/fsl_ftfx_flash.o" "../drivers/fsl_ftfx_flash.c"
+ 
+ 
+Building file: ../drivers/fsl_ftfx_flexnvm.c
+Building file: ../drivers/fsl_gpio.c
+Building file: ../drivers/fsl_i2c.c
+Building file: ../drivers/fsl_lpsci.c
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DCPU_MKL46Z256VLL4_cm0plus -DCPU_MKL46Z256VLL4 -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\board" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\source" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\drivers" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\CMSIS" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\utilities" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\startup" -Os -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmacro-prefix-map="../drivers/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_ftfx_flexnvm.d" -MT"drivers/fsl_ftfx_flexnvm.o" -MT"drivers/fsl_ftfx_flexnvm.d" -o "drivers/fsl_ftfx_flexnvm.o" "../drivers/fsl_ftfx_flexnvm.c"
+Finished building: ../drivers/fsl_common.c
+Finished building: ../utilities/fsl_str.c
+arm-none-eabi-gcc -DCPU_MKL46Z256VLL4_cm0plus -DCPU_MKL46Z256VLL4 -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\board" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\source" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\drivers" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\CMSIS" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\utilities" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\startup" -Os -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmacro-prefix-map="../drivers/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_gpio.d" -MT"drivers/fsl_gpio.o" -MT"drivers/fsl_gpio.d" -o "drivers/fsl_gpio.o" "../drivers/fsl_gpio.c"
+arm-none-eabi-gcc -DCPU_MKL46Z256VLL4_cm0plus -DCPU_MKL46Z256VLL4 -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\board" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\source" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\drivers" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\CMSIS" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\utilities" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\startup" -Os -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmacro-prefix-map="../drivers/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_i2c.d" -MT"drivers/fsl_i2c.o" -MT"drivers/fsl_i2c.d" -o "drivers/fsl_i2c.o" "../drivers/fsl_i2c.c"
+Finished building: ../source/srec.c
+arm-none-eabi-gcc -DCPU_MKL46Z256VLL4_cm0plus -DCPU_MKL46Z256VLL4 -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\board" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\source" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\drivers" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\CMSIS" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\utilities" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\startup" -Os -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmacro-prefix-map="../drivers/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_lpsci.d" -MT"drivers/fsl_lpsci.o" -MT"drivers/fsl_lpsci.d" -o "drivers/fsl_lpsci.o" "../drivers/fsl_lpsci.c"
+ 
+ 
+Finished building: ../drivers/fsl_ftfx_cache.c
+ 
+Building file: ../drivers/fsl_smc.c
+Building file: ../drivers/fsl_uart.c
+ 
+Building file: ../board/board.c
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DCPU_MKL46Z256VLL4_cm0plus -DCPU_MKL46Z256VLL4 -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\board" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\source" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\drivers" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\CMSIS" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\utilities" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\startup" -Os -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmacro-prefix-map="../drivers/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_smc.d" -MT"drivers/fsl_smc.o" -MT"drivers/fsl_smc.d" -o "drivers/fsl_smc.o" "../drivers/fsl_smc.c"
+Building file: ../board/clock_config.c
+arm-none-eabi-gcc -DCPU_MKL46Z256VLL4_cm0plus -DCPU_MKL46Z256VLL4 -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\board" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\source" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\drivers" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\CMSIS" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\utilities" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\startup" -Os -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmacro-prefix-map="../drivers/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_uart.d" -MT"drivers/fsl_uart.o" -MT"drivers/fsl_uart.d" -o "drivers/fsl_uart.o" "../drivers/fsl_uart.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DCPU_MKL46Z256VLL4_cm0plus -DCPU_MKL46Z256VLL4 -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\board" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\source" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\drivers" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\CMSIS" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\utilities" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\startup" -Os -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmacro-prefix-map="../board/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"board/board.d" -MT"board/board.o" -MT"board/board.d" -o "board/board.o" "../board/board.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DCPU_MKL46Z256VLL4_cm0plus -DCPU_MKL46Z256VLL4 -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\board" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\source" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\drivers" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\CMSIS" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\utilities" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\startup" -Os -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmacro-prefix-map="../board/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"board/clock_config.d" -MT"board/clock_config.o" -MT"board/clock_config.d" -o "board/clock_config.o" "../board/clock_config.c"
+Building file: ../board/peripherals.c
+Building file: ../board/pin_mux.c
+Building file: ../CMSIS/system_MKL46Z4.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DCPU_MKL46Z256VLL4_cm0plus -DCPU_MKL46Z256VLL4 -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\board" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\source" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\drivers" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\CMSIS" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\utilities" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\startup" -Os -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmacro-prefix-map="../board/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"board/peripherals.d" -MT"board/peripherals.o" -MT"board/peripherals.d" -o "board/peripherals.o" "../board/peripherals.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DCPU_MKL46Z256VLL4_cm0plus -DCPU_MKL46Z256VLL4 -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\board" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\source" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\drivers" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\CMSIS" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\utilities" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\startup" -Os -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmacro-prefix-map="../board/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"board/pin_mux.d" -MT"board/pin_mux.o" -MT"board/pin_mux.d" -o "board/pin_mux.o" "../board/pin_mux.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DCPU_MKL46Z256VLL4_cm0plus -DCPU_MKL46Z256VLL4 -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\board" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\source" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\drivers" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\CMSIS" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\utilities" -I"G:\FSoft\Mock\Mock2_Kieu_Tien_Dung\1MKL46Z4_Project\startup" -Os -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmacro-prefix-map="../CMSIS/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"CMSIS/system_MKL46Z4.d" -MT"CMSIS/system_MKL46Z4.o" -MT"CMSIS/system_MKL46Z4.d" -o "CMSIS/system_MKL46Z4.o" "../CMSIS/system_MKL46Z4.c"
+Finished building: ../drivers/fsl_gpio.c
+Finished building: ../drivers/fsl_ftfx_flash.c
+Finished building: ../board/board.c
+ 
+ 
+ 
+Finished building: ../drivers/fsl_clock.c
+Finished building: ../drivers/fsl_ftfx_controller.c
+Finished building: ../drivers/fsl_smc.c
+Finished building: ../drivers/fsl_ftfx_flexnvm.c
+Finished building: ../board/clock_config.c
+ 
+Finished building: ../board/pin_mux.c
+Finished building: ../board/peripherals.c
+Finished building: ../CMSIS/system_MKL46Z4.c
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Finished building: ../drivers/fsl_lpsci.c
+ 
+Finished building: ../drivers/fsl_uart.c
+ 
+Finished building: ../drivers/fsl_i2c.c
+ 
+Building target: 1MKL46Z4_Project.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="1MKL46Z4_Project.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T 1MKL46Z4_Project_Debug.ld -o "1MKL46Z4_Project.axf" ./utilities/fsl_debug_console.o ./utilities/fsl_io.o ./utilities/fsl_log.o ./utilities/fsl_str.o  ./startup/startup_mkl46z4.o  ./source/Flash.o ./source/Mock2.o ./source/Ring_buffe.o ./source/UART0.o ./source/clock.o ./source/init.o ./source/programme.o ./source/srec.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_i2c.o ./drivers/fsl_lpsci.o ./drivers/fsl_smc.o ./drivers/fsl_uart.o  ./board/board.o ./board/clock_config.o ./board/peripherals.o ./board/pin_mux.o  ./CMSIS/system_MKL46Z4.o   
+c:/nxp/mcuxpressoide_11.8.0_1165/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.8.0.202306131047/tools/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/bin/ld.exe: warning: 1MKL46Z4_Project.axf has a LOAD segment with RWX permissions
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        5880 B       256 KB      2.24%
+            SRAM:        5808 B        32 KB     17.72%
+Finished building target: 1MKL46Z4_Project.axf
+ 
+Performing post-build steps
+arm-none-eabi-size "1MKL46Z4_Project.axf"; # arm-none-eabi-objcopy -v -O binary "1MKL46Z4_Project.axf" "1MKL46Z4_Project.bin" ; # checksum -p MKL46Z256xxx4 -d "1MKL46Z4_Project.bin";
+   text	   data	    bss	    dec	    hex	filename
+   5880	      0	   5552	  11432	   2ca8	1MKL46Z4_Project.axf
+ 
+10:47:21 **** Incremental Build of configuration Debug for project 1MKL46Z4_Project ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size "1MKL46Z4_Project.axf"; # arm-none-eabi-objcopy -v -O binary "1MKL46Z4_Project.axf" "1MKL46Z4_Project.bin" ; # checksum -p MKL46Z256xxx4 -d "1MKL46Z4_Project.bin";
+   text	   data	    bss	    dec	    hex	filename
+   5880	      0	   5552	  11432	   2ca8	1MKL46Z4_Project.axf
+ 
+21:37:25 **** Incremental Build of configuration Debug for project 1MKL46Z4_Project ****
+make -r -j16 all 
+Building target: 1MKL46Z4_Project.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="1MKL46Z4_Project.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T 1MKL46Z4_Project_Debug.ld -o "1MKL46Z4_Project.axf" ./utilities/fsl_debug_console.o ./utilities/fsl_io.o ./utilities/fsl_log.o ./utilities/fsl_str.o  ./startup/startup_mkl46z4.o  ./source/Flash.o ./source/Mock2.o ./source/Ring_buffe.o ./source/UART0.o ./source/clock.o ./source/init.o ./source/programme.o ./source/srec.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_i2c.o ./drivers/fsl_lpsci.o ./drivers/fsl_smc.o ./drivers/fsl_uart.o  ./board/board.o ./board/clock_config.o ./board/peripherals.o ./board/pin_mux.o  ./CMSIS/system_MKL46Z4.o   
+c:/nxp/mcuxpressoide_11.8.0_1165/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.8.0.202306131047/tools/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/bin/ld.exe: warning: 1MKL46Z4_Project.axf has a LOAD segment with RWX permissions
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        5880 B       256 KB      2.24%
+            SRAM:        5808 B        32 KB     17.72%
+Finished building target: 1MKL46Z4_Project.axf
+ 
+Performing post-build steps
+arm-none-eabi-size "1MKL46Z4_Project.axf"; # arm-none-eabi-objcopy -v -O binary "1MKL46Z4_Project.axf" "1MKL46Z4_Project.bin" ; # checksum -p MKL46Z256xxx4 -d "1MKL46Z4_Project.bin";
+   text	   data	    bss	    dec	    hex	filename
+   5880	      0	   5552	  11432	   2ca8	1MKL46Z4_Project.axf
+ 
+11:34:30 **** Incremental Build of configuration Debug for project 1MKL46Z4_Project ****
+make -r -j16 all 
+Building target: 1MKL46Z4_Project.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="1MKL46Z4_Project.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T 1MKL46Z4_Project_Debug.ld -o "1MKL46Z4_Project.axf" ./utilities/fsl_debug_console.o ./utilities/fsl_io.o ./utilities/fsl_log.o ./utilities/fsl_str.o  ./startup/startup_mkl46z4.o  ./source/Flash.o ./source/Mock2.o ./source/Ring_buffe.o ./source/UART0.o ./source/clock.o ./source/init.o ./source/programme.o ./source/srec.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_i2c.o ./drivers/fsl_lpsci.o ./drivers/fsl_smc.o ./drivers/fsl_uart.o  ./board/board.o ./board/clock_config.o ./board/peripherals.o ./board/pin_mux.o  ./CMSIS/system_MKL46Z4.o   
+c:/nxp/mcuxpressoide_11.8.0_1165/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.8.0.202306131047/tools/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/bin/ld.exe: warning: 1MKL46Z4_Project.axf has a LOAD segment with RWX permissions
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        5880 B       256 KB      2.24%
+            SRAM:        5808 B        32 KB     17.72%
+Finished building target: 1MKL46Z4_Project.axf
+ 
+Performing post-build steps
+arm-none-eabi-size "1MKL46Z4_Project.axf"; # arm-none-eabi-objcopy -v -O binary "1MKL46Z4_Project.axf" "1MKL46Z4_Project.bin" ; # checksum -p MKL46Z256xxx4 -d "1MKL46Z4_Project.bin";
+   text	   data	    bss	    dec	    hex	filename
+   5880	      0	   5552	  11432	   2ca8	1MKL46Z4_Project.axf
+ 
+11:35:08 **** Incremental Build of configuration Debug for project 1MKL46Z4_Project ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size "1MKL46Z4_Project.axf"; # arm-none-eabi-objcopy -v -O binary "1MKL46Z4_Project.axf" "1MKL46Z4_Project.bin" ; # checksum -p MKL46Z256xxx4 -d "1MKL46Z4_Project.bin";
+   text	   data	    bss	    dec	    hex	filename
+   5880	      0	   5552	  11432	   2ca8	1MKL46Z4_Project.axf
+ 
+11:40:01 **** Incremental Build of configuration Debug for project 1MKL46Z4_Project ****
+make -r -j16 all 
+Building target: 1MKL46Z4_Project.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="1MKL46Z4_Project.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T 1MKL46Z4_Project_Debug.ld -o "1MKL46Z4_Project.axf" ./utilities/fsl_debug_console.o ./utilities/fsl_io.o ./utilities/fsl_log.o ./utilities/fsl_str.o  ./startup/startup_mkl46z4.o  ./source/Flash.o ./source/Mock2.o ./source/Ring_buffe.o ./source/UART0.o ./source/clock.o ./source/init.o ./source/programme.o ./source/srec.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_i2c.o ./drivers/fsl_lpsci.o ./drivers/fsl_smc.o ./drivers/fsl_uart.o  ./board/board.o ./board/clock_config.o ./board/peripherals.o ./board/pin_mux.o  ./CMSIS/system_MKL46Z4.o   
+c:/nxp/mcuxpressoide_11.8.0_1165/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.8.0.202306131047/tools/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/bin/ld.exe: warning: 1MKL46Z4_Project.axf has a LOAD segment with RWX permissions
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        5880 B       256 KB      2.24%
+            SRAM:        5808 B        32 KB     17.72%
+Finished building target: 1MKL46Z4_Project.axf
+ 
+Performing post-build steps
+arm-none-eabi-size "1MKL46Z4_Project.axf"; # arm-none-eabi-objcopy -v -O binary "1MKL46Z4_Project.axf" "1MKL46Z4_Project.bin" ; # checksum -p MKL46Z256xxx4 -d "1MKL46Z4_Project.bin";
+   text	   data	    bss	    dec	    hex	filename
+   5880	      0	   5552	  11432	   2ca8	1MKL46Z4_Project.axf
+ 

@@ -1,0 +1,19 @@
+11:40:01 **** Incremental Build of configuration Debug for project 1MKL46Z4_Project ****
+make -r -j16 all 
+Building target: 1MKL46Z4_Project.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="1MKL46Z4_Project.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T 1MKL46Z4_Project_Debug.ld -o "1MKL46Z4_Project.axf" ./utilities/fsl_debug_console.o ./utilities/fsl_io.o ./utilities/fsl_log.o ./utilities/fsl_str.o  ./startup/startup_mkl46z4.o  ./source/Flash.o ./source/Mock2.o ./source/Ring_buffe.o ./source/UART0.o ./source/clock.o ./source/init.o ./source/programme.o ./source/srec.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_i2c.o ./drivers/fsl_lpsci.o ./drivers/fsl_smc.o ./drivers/fsl_uart.o  ./board/board.o ./board/clock_config.o ./board/peripherals.o ./board/pin_mux.o  ./CMSIS/system_MKL46Z4.o   
+c:/nxp/mcuxpressoide_11.8.0_1165/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.8.0.202306131047/tools/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/bin/ld.exe: warning: 1MKL46Z4_Project.axf has a LOAD segment with RWX permissions
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        5880 B       256 KB      2.24%
+            SRAM:        5808 B        32 KB     17.72%
+Finished building target: 1MKL46Z4_Project.axf
+ 
+Performing post-build steps
+arm-none-eabi-size "1MKL46Z4_Project.axf"; # arm-none-eabi-objcopy -v -O binary "1MKL46Z4_Project.axf" "1MKL46Z4_Project.bin" ; # checksum -p MKL46Z256xxx4 -d "1MKL46Z4_Project.bin";
+   text	   data	    bss	    dec	    hex	filename
+   5880	      0	   5552	  11432	   2ca8	1MKL46Z4_Project.axf
+ 
+
+11:40:01 Build Finished. 0 errors, 1 warnings. (took 302ms)
+

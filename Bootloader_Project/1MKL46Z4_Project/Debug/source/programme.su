@@ -1,0 +1,4 @@
+../source/programme.c:93:42:UART0_IRQHandler	16	static
+../source/programme.c:31:6:My_VectorTable	0	static
+../source/programme.c:39:6:Run_Bootloader	40	static
+../source/programme.c:119:6:Run_Application	8	static

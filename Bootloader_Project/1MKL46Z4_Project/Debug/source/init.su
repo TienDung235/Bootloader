@@ -1,0 +1,4 @@
+../source/init.c:15:6:initLed	8	static
+../source/init.c:48:6:init_Systick_timer	0	static
+../source/init.c:59:6:init_TPM0	0	static
+../source/init.c:73:6:init_PIT	0	static

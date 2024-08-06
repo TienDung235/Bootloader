@@ -1,0 +1,5 @@
+../source/srec.c:21:9:strHex_to_int	0	static
+../source/srec.c:38:10:check_sum	24	static
+../source/srec.c:56:10:check_byte	16	static
+../source/srec.c:75:10:getAddressSrec	16	static
+../source/srec.c:86:10:getdata	32	static

@@ -1,0 +1,6 @@
+../source/Ring_buffe.c:32:46:getWriteAddress	0	static
+../source/Ring_buffe.c:47:42:Increace_Write_Data	0	static
+../source/Ring_buffe.c:57:45:RingBuffer_CheckFull	0	static
+../source/Ring_buffe.c:26:10:getReadAddress	0	static
+../source/Ring_buffe.c:37:6:Increace_Read_Data	0	static
+../source/Ring_buffe.c:66:9:RingBuffer_CheckEmpty	0	static
